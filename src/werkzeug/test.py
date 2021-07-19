@@ -888,7 +888,8 @@ class Client(object):
                 if not self.allow_subdomain_redirects:
                     raise RuntimeError("Following subdomain redirects is not enabled.")
             else:
-                raise RuntimeError("Following external redirects is not supported.")
+                pass
+                #raise RuntimeError("Following external redirects is not supported.")
 
         path_parts = path.split("/")
         root_parts = builder.script_root.split("/")
